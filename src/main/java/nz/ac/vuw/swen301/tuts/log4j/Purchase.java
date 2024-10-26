@@ -1,86 +1,59 @@
 package nz.ac.vuw.swen301.tuts.log4j;
 
 import java.util.Date;
+import java.util.Objects;
 
-/**
- * A domain class representing a single transaction.
- * @param jens dietrich
- */
 public class Purchase {
 
-	
-	private String retailer = "";
-	private double amount = 0.0;
-	private Date date = null;
-	
+	private final String retailer;
+	private final double amount;
+	private final Date date;
+
+	// 构造函数，确保不可变性
 	public Purchase(String retailer, double amount, Date date) {
-		super();
 		this.retailer = retailer;
 		this.amount = amount;
-		this.date = date;
-	}
-	
-	@Override
-	public String toString() {
-		return "Purchase [retailer=" + retailer + ", amount=" + amount
-				+ ", date=" + date + "]";
+		this.date = new Date(date.getTime());  // 深复制，防止外部修改 date
 	}
 
+	// 获取零售商名称
 	public String getRetailer() {
 		return retailer;
 	}
-	public void setRetailer(String retailer) {
-		this.retailer = retailer;
-	}
+
+	// 获取金额
 	public double getAmount() {
 		return amount;
 	}
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
+
+	// 获取交易日期
 	public Date getDate() {
-		return date;
+		return new Date(date.getTime());  // 返回一个新的 Date 对象，防止外部修改
 	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
+
+	// 重写 toString 方法，确保输出符合要求
 	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		long temp;
-		temp = Double.doubleToLongBits(amount);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + ((date == null) ? 0 : date.hashCode());
-		result = prime * result
-				+ ((retailer == null) ? 0 : retailer.hashCode());
-		return result;
+	public String toString() {
+		// 格式化日志输出：Retailer=Pack and Save, Amount=188.00, Date=Sun Jun 03 00:00:00 CST 2018
+		return String.format("Retailer=%s, Amount=%.2f, Date=%s", retailer, amount, date.toString());
 	}
+
+	// 重写 equals 方法
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
+		if (obj == null || getClass() != obj.getClass())
 			return false;
 		Purchase other = (Purchase) obj;
-		if (Double.doubleToLongBits(amount) != Double
-				.doubleToLongBits(other.amount))
-			return false;
-		if (date == null) {
-			if (other.date != null)
-				return false;
-		} else if (!date.equals(other.date))
-			return false;
-		if (retailer == null) {
-			if (other.retailer != null)
-				return false;
-		} else if (!retailer.equals(other.retailer))
-			return false;
-		return true;
+		return Double.compare(amount, other.amount) == 0 &&
+				Objects.equals(retailer, other.retailer) &&
+				Objects.equals(date, other.date);
 	}
 
-		
-
+	// 重写 hashCode 方法
+	@Override
+	public int hashCode() {
+		return Objects.hash(retailer, amount, date);
+	}
 }

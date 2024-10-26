@@ -1,0 +1,60 @@
+INFO - Import data from transactions1.csv
+INFO - Import data from transactions1.csv
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=188.00, Date=Sun Jun 03 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Harvey Norman, Amount=20.00, Date=Tue Jun 12 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=BP, Amount=90.00, Date=Fri Jun 15 00:00:00 CST 2018
+INFO - Import data from transactions2.csv
+INFO - Import data from transactions2.csv
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=230.00, Date=Tue May 01 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Briscoes, Amount=10.00, Date=Thu May 03 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Warehouse, Amount=20.00, Date=Fri May 04 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=240.00, Date=Sun May 06 00:00:00 CST 2018
+INFO - Import data from transactions3.csv
+INFO - Import data from transactions3.csv
+DEBUG - Imported transaction: Retailer=Wet Pets, Amount=42.00, Date=Sun May 13 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Animates, Amount=4.00, Date=Sun May 13 00:00:00 CST 2018
+WARN - File transactions4.csv does not exist.
+WARN - File transactions4.csv does not exist.
+INFO - 9 transactions imported
+INFO - Total value: ¥844.00
+INFO - Max value: ¥240.00
+INFO - Import data from transactions1.csv
+INFO - Import data from transactions1.csv
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=188.00, Date=Sun Jun 03 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Harvey Norman, Amount=20.00, Date=Tue Jun 12 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=BP, Amount=90.00, Date=Fri Jun 15 00:00:00 CST 2018
+INFO - Import data from transactions2.csv
+INFO - Import data from transactions2.csv
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=230.00, Date=Tue May 01 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Briscoes, Amount=10.00, Date=Thu May 03 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Warehouse, Amount=20.00, Date=Fri May 04 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=240.00, Date=Sun May 06 00:00:00 CST 2018
+INFO - Import data from transactions3.csv
+INFO - Import data from transactions3.csv
+DEBUG - Imported transaction: Retailer=Wet Pets, Amount=42.00, Date=Sun May 13 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Animates, Amount=4.00, Date=Sun May 13 00:00:00 CST 2018
+WARN - File transactions4.csv does not exist.
+WARN - File transactions4.csv does not exist.
+INFO - 9 transactions imported
+INFO - Total value: ¥844.00
+INFO - Max value: ¥240.00
+INFO - Import data from transactions1.csv
+INFO - Import data from transactions1.csv
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=188.00, Date=Sun Jun 03 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Harvey Norman, Amount=20.00, Date=Tue Jun 12 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=BP, Amount=90.00, Date=Fri Jun 15 00:00:00 CST 2018
+INFO - Import data from transactions2.csv
+INFO - Import data from transactions2.csv
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=230.00, Date=Tue May 01 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Briscoes, Amount=10.00, Date=Thu May 03 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Warehouse, Amount=20.00, Date=Fri May 04 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Pack and Save, Amount=240.00, Date=Sun May 06 00:00:00 CST 2018
+INFO - Import data from transactions3.csv
+INFO - Import data from transactions3.csv
+DEBUG - Imported transaction: Retailer=Wet Pets, Amount=42.00, Date=Sun May 13 00:00:00 CST 2018
+DEBUG - Imported transaction: Retailer=Animates, Amount=4.00, Date=Sun May 13 00:00:00 CST 2018
+WARN - File transactions4.csv does not exist.
+WARN - File transactions4.csv does not exist.
+INFO - 9 transactions imported
+INFO - Total value: ¥844.00
+INFO - Max value: ¥240.00
